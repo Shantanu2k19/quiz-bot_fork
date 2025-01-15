@@ -5,3 +5,5 @@ __pycache__/
 db.sqlite3
 init.sql
 media/
+webd/
+.env.swp
