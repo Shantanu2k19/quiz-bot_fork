@@ -133,8 +133,7 @@
         const messageClass = isUser ? 'user-message' : 'bot-message';
         const messageText = `
             <li class="message ${messageClass}">
-                <div class="message-text">${text}</div>
-            </li>
+              <div class="message-text">${text.replace(/\n/g, '<br>')}</div>            </li>
         `;
         chatMessages.insertAdjacentHTML('beforeend', messageText);
     }
